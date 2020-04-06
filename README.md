@@ -43,11 +43,23 @@ git clone https://github.com/jhchenjh/ee4208_edge_detection.git
 ```
 SET(OpenCV_DIR /path/to/OpenCV/)
 ```
-* build the project
+* build the project, in terminal, run the following commands
 ```
 mkdir build
 cd build
 cmake ..
 make
 cd ..
+```
+
+
+### how to run
+* inside the *.sh* files, specify input image and output path, change parameters.
+* in terminal, run *.sh* file, eg:
+```
+./canny.sh
+```
+* if you want to view the original images, use *raw_to_pgm* to convert .raw images to viewable .pgm images, in terminal, run
+```
+./build/raw_to_pgm
 ```
