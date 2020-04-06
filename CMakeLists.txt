@@ -17,7 +17,7 @@ target_link_libraries(canny ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 add_executable(log src/LoG.cpp)
 target_link_libraries(log ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 
-add_library(edge_devernay src/edge_devernay.cpp edge_devernay.h)
+add_library(edge_devernay src/edge_devernay.cpp src/edge_devernay.h)
 target_link_libraries(edge_devernay ${OpenCV_LIBRARIES})
 
 add_executable(canny_devernay src/canny_devernay_subpixel.cpp)
